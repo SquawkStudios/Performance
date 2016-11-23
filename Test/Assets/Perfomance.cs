@@ -14,14 +14,15 @@ public class Perfomance : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Calls the date time of the system at start of test.
-		Debug.Log(DateTime());           
+		//Debug.Log(DateTime());           
+		Debug.Log (System.DateTime.Now);
 		
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		CalculatePrimeNumber()  ;
+		CalculatePrimeNumber(2)  ;
 	}
 	
 	//This is the calculations for the prime number
@@ -29,7 +30,8 @@ public class Perfomance : MonoBehaviour {
 		for(int i = 1; i < MaxPrime; i++){
 			Debug.Log(i);   // Call method which calculates if our number is a prime, our number being i
 			if(CurrentPrime == MaxPrime) {
-				Debug.Log(DateTime());
+				//Debug.Log(DateTime());
+				Debug.Log (System.DateTime.Now);
 			}
 		}
 	}
@@ -58,8 +60,8 @@ public class Perfomance : MonoBehaviour {
 		}
 	}
 	
-	private void DateTime(){
-		System.DateTime.Now;
+	public void DateTime(){
+		Debug.Log (System.DateTime.Now);
 	}
 }
 /*
