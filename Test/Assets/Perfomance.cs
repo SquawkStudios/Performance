@@ -22,15 +22,15 @@ public class Perfomance : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		CalculatePrimeNumber(2)  ;
+		
 	}
 	
 	//This is the calculations for the prime number
 	public void PrimeNumber() {
 		for(int i = 1; i < MaxPrime; i++){
-			Debug.Log(i);   // Call method which calculates if our number is a prime, our number being i
+			CalculatePrimeNumber(i);   // Call method which calculates if our number is a prime, our number being i
 			if(CurrentPrime == MaxPrime) {
-				//Debug.Log(DateTime());
+				
 				Debug.Log (System.DateTime.Now);
 			}
 		}
