@@ -1,9 +1,31 @@
 ﻿using UnityEngine;
 
 public class Perfomance : MonoBehaviour {
-	
-	//Sets the Maximum prime number the test can reach.
-	private int MaxPrime = 500000;
+
+    // TOOD:    How about taking the Debug.Log lines out of the CalculatePrimeNumber() method and instead of having it 
+    //          return void, have it return the int it has calculated if it is a prime number
+    //          Could return PrimeNumber() method to DisplayPrimeNumbers() and maybe place the outputting calls in there, 
+    //          including the initial DateTime() call
+    //      
+    //          Something like;
+    //          private void DisplayPrimeNumbers()
+    //          // Display initial DateTime()
+    //          // Start iteration
+    //          // populate local variable with return value from CalculatePrimeNumber()
+    //          // Display local variable to console
+    //          // Display final DateTime()
+    //
+    //          That would keep things fairly tidy.
+    //          Then, potentially after that you could copy and paste the method, rename one to DisplayPrimeNumbersVariable()
+    //          and one to DisplayPrimeNumbersDirectMethod()
+    //          in the DisplayPrimeNumbersDirectMethod() method, remove the local variable code and simply Debug.Log(CalculatePrimeNumber(i));
+    //
+    //          That would give you both methods of the testing we were aiming for, all in fairly tidy methods.
+    //          Suggestions only :)
+
+
+    //Sets the Maximum prime number the test can reach.
+    private int MaxPrime = 500000;
 	
 	// Use this for initialization
 	void Start () {
